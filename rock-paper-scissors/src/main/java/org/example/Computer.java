@@ -3,6 +3,16 @@ package org.example;
 import java.util.Random;
 
 public class Computer extends Player {
+    private String name = "Computer";
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public Result chooseMove() {
         Random rand = new Random();
