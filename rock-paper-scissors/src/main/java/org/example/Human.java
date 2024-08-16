@@ -3,6 +3,10 @@ package org.example;
 public class Human extends Player {
     private String name;
 
+    public Human(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
@@ -12,7 +16,23 @@ public class Human extends Player {
     }
 
     @Override
-    public Result chooseMove() {
-        return null;
+    public Result chooseMove(int i) {
+        Result result;
+        switch (i) {
+            case 0:
+                result = Result.ROCK;
+                break;
+            case 1:
+                result = Result.PAPER;
+                break;
+            case 2:
+                result = Result.SCISSORS;
+                break;
+            default:
+                result = null;
+                break;
+        }
+
+        return result;
     }
 }

@@ -14,22 +14,22 @@ public class Computer extends Player {
     }
 
     @Override
-    public Result chooseMove() {
+    public Result chooseMove(int i) {
         Random rand = new Random();
         int choice = rand.nextInt(3);
         Result result;
         switch (choice) {
-            case 1:
+            case 0:
                 result = Result.ROCK;
                 break;
-            case 2:
+            case 1:
                 result = Result.PAPER;
                 break;
-            case 3:
+            case 2:
                 result = Result.SCISSORS;
                 break;
             default:
-                result = Result.ROCK;
+                result = null;
                 break;
         }
 
