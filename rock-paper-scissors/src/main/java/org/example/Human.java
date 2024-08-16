@@ -19,13 +19,13 @@ public class Human extends Player {
     public Result chooseMove(int i) {
         Result result;
         switch (i) {
-            case 0:
+            case 1:
                 result = Result.ROCK;
                 break;
-            case 1:
+            case 2:
                 result = Result.PAPER;
                 break;
-            case 2:
+            case 3:
                 result = Result.SCISSORS;
                 break;
             default:

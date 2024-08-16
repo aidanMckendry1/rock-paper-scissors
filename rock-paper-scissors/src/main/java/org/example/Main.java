@@ -54,33 +54,51 @@ public class Main {
 
             if (playerChoice == Result.ROCK) {
                 if (computerChoice == Result.ROCK) {
+                    System.out.println("You chose " + playerChoice);
+                    System.out.println("Computer chose " + computerChoice);
                     System.out.println("Draw, no points allocated");
                 } else if (computerChoice ==Result.PAPER) {
+                    System.out.println("You chose " + playerChoice);
+                    System.out.println("Computer chose " + computerChoice);
                     System.out.println("Oh no, you lost this round");
                     ai1.incrementScore();
                 } else if (computerChoice == Result.SCISSORS) {
+                    System.out.println("You chose " + playerChoice);
+                    System.out.println("Computer chose " + computerChoice);
                     System.out.println("You won this round!");
                     player1.incrementScore();
                 }
             } else if (playerChoice == Result.PAPER) {
                 if (computerChoice == Result.ROCK) {
+                    System.out.println("You chose " + playerChoice);
+                    System.out.println("Computer chose " + computerChoice);
                     System.out.println("You won this round!");
                     player1.incrementScore();
                 } else if (computerChoice ==Result.PAPER) {
+                    System.out.println("You chose " + playerChoice);
+                    System.out.println("Computer chose " + computerChoice);
                     System.out.println("Draw, no points allocated");
                 } else if (computerChoice == Result.SCISSORS) {
+                    System.out.println("You chose " + playerChoice);
+                    System.out.println("Computer chose " + computerChoice);
                     System.out.println("Oh no, you lost this round");
                     ai1.incrementScore();
                 }
 
             } else if (playerChoice == Result.SCISSORS) {
                 if (computerChoice == Result.ROCK) {
+                    System.out.println("You chose " + playerChoice);
+                    System.out.println("Computer chose " + computerChoice);
                     System.out.println("Oh no, you lost this round");
                     ai1.incrementScore();
                 } else if (computerChoice == Result.PAPER) {
+                    System.out.println("You chose " + playerChoice);
+                    System.out.println("Computer chose " + computerChoice);
                     System.out.println("You won this round!");
                     player1.incrementScore();
                 } else if (computerChoice == Result.SCISSORS) {
+                    System.out.println("You chose " + playerChoice);
+                    System.out.println("Computer chose " + computerChoice);
                     System.out.println("Draw, no points allocated");
                 }
             }
